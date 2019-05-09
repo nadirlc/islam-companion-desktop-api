@@ -2,7 +2,7 @@ import sys,os
 import unittest
 sys.path.append('..')
 
-from quran_api import Quran_Api
+from icdesktopapi.quran_api import Quran_Api
 
 class TestQuran_Api(unittest.TestCase):
     """Used to test the quran api"""
@@ -12,7 +12,7 @@ class TestQuran_Api(unittest.TestCase):
     
         # The absolute path to the database 
         cur_dir         = os.path.dirname(os.path.realpath(__file__))
-        db_path         = os.path.abspath(cur_dir + "../data/holy-quran.db")
+        db_path         = os.path.abspath(cur_dir + "/../data/holy-quran.db")
         
         """It creates an object of type Quran_Api"""
         cls.quran_api = Quran_Api(db_path)

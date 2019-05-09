@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="ic-desktop-api",
-    version="1.0.0.post1",
+    version="1.0.1",
     author="Nadir Latif",
     author_email="nadir@pakjiddat.pk",
     description="Desktop API for accessing Holy Quran and Hadith data",

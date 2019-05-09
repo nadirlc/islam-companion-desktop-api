@@ -2,7 +2,7 @@ import sys,os
 import unittest
 sys.path.append('..')
 
-from hadith_api import Hadith_Api
+from icdesktopapi.hadith_api import Hadith_Api
 
 class TestHadith_Api(unittest.TestCase):
     """Used to test the hadith api"""
@@ -12,7 +12,7 @@ class TestHadith_Api(unittest.TestCase):
    
         # The absolute path to the database 
         cur_dir         = os.path.dirname(os.path.realpath(__file__))
-        db_path         = os.path.abspath(cur_dir + "../data/hadith.db")
+        db_path         = os.path.abspath(cur_dir + "/../data/hadith.db")
         
         """It creates an object of type Hadith_Api"""
         cls.hadith_api = Hadith_Api(db_path)
@@ -38,15 +38,13 @@ class TestHadith_Api(unittest.TestCase):
         
     def test_get_title_list(self):
         """It checks if the number of hadith titles fetched
-        from database is 172 for the source "صحیح بخاری"
-        and the book "انصار کے مناقب"
+        from database is 194 for the book with id 1
         """
         
         cls        = self.__class__
-        source     = "صحیح بخاری"
-        book       = "انصار کے مناقب"
-        title_list = cls.hadith_api.get_title_list(source, book)
-        self.assertEqual(len(title_list), 172)
+        book_id    = 1
+        title_list = cls.hadith_api.get_title_list(book_id)
+        self.assertEqual(len(title_list), 194)
         
     def test_get_hadith_text(self):
         """It checks if the length of hadith text for the
