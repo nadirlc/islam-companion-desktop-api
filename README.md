@@ -1,10 +1,10 @@
-![Islam Companion Desktop API](https://pakjiddat.netlify.com/static/7f2d195ad7c772ec2e7065e946722dff/f8915/islamcompanion-desktop-api.png)
+![Islam Companion Desktop API](https://pakjiddat.netlify.app/static/7f2d195ad7c772ec2e7065e946722dff/f8915/islamcompanion-desktop-api.png)
 
 ### Introduction
 
 The "**Islam Companion Desktop API**" project is a API (Application Programming Interface) written in [Python](https://www.python.org/) language, that allows users to add Holy Quran and Hadith data to their applications. Currently it provides Quranic and Hadith translations in Urdu language. Support for other languages is planned.
 
-An example of an application that uses the Islam Companion Desktop API is the [Islam Companion Desktop](https://pakjiddat.netlify.com/posts/islam-companion-desktop-api) application.
+An example of an application that uses the Islam Companion Desktop API is the [Islam Companion Desktop](https://pakjiddat.netlify.app/posts/islam-companion-desktop-api) application.
 
 The goal of the Islam Companion Desktop API is to help users develop desktop applications that provide knowledge about Islam.
 
